@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  color: #61dafb;
+  padding: 0 10px;
+}
+
+.chessboard-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el contenedor del tablero */
+.chessboard-container > div {
+  width: 100% !important;
+  max-width: 90vmin !important;
+  height: 90vmin !important;
+  max-height: 90vw !important;
+  margin: 0 auto !important;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .app {
+    padding: 5px;
+  }
+  
+  .chessboard-container {
+    padding: 5px;
+  }
+  
+  .chessboard-container > div {
+    max-width: 95vmin !important;
+    height: 95vmin !important;
+  }
+}
+
+/* Ajustes para móviles en posición horizontal */
+@media (max-height: 500px) {
+  .chessboard-container > div {
+    max-width: 90vh !important;
+    height: 90vh !important;
+  }
+}
