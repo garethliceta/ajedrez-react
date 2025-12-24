@@ -105,7 +105,7 @@ function App() {
   return (
     <div className="app">
       <header>
-        <h1>Ajedrez en React version 2</h1>
+        <h1>Ajedrez en React version 222</h1>
       </header>
       <div className="chessboard-container">
         <div style={{ width: '100%', height: '100%' }}>
